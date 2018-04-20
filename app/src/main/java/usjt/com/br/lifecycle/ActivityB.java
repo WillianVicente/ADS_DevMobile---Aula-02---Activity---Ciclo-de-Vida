@@ -26,7 +26,9 @@ import usjt.com.br.lifecycle.util.StatusTracker;
 import usjt.com.br.lifecycle.util.Utils;
 
 /**
- * Example Activity to demonstrate the lifecycle callback methods.
+ * Willian Vicente Prado
+ * RA: 816119009
+ * ADSMCA3
  */
 public class ActivityB extends Activity {
 
