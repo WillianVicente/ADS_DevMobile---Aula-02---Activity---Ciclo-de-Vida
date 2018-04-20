@@ -84,7 +84,6 @@ public class ActivityA extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_destroy));
-        mStatusTracker.clear();
     }
 
     public void startDialog(View v) {

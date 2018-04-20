@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    android:background="@color/dark_blue"
+    android:background="@color/dark_red"
     android:orientation="vertical"
     tools:context="usjt.com.br.lifecycle.ActivityB">
 
@@ -24,25 +24,25 @@
         android:layout_gravity="center_horizontal">
 
         <Button
-            android:id="@+id/btn_start_b"
+            android:id="@+id/btn_start_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_start_b_label"
-            android:onClick="startActivityB"/>
+            android:text="@string/btn_start_a_label"
+            android:onClick="startActivityA"/>
 
         <Button
             android:id="@+id/btn_start_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn_start_c_label"
-            android:layout_toRightOf="@id/btn_start_b"
+            android:layout_toRightOf="@id/btn_start_a"
             android:onClick="startActivityC"/>
 
         <Button
-            android:id="@+id/btn_finish_a"
+            android:id="@+id/btn_finish_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_finish_a_label"
+            android:text="@string/btn_finish_b_label"
             android:layout_toRightOf="@id/btn_start_c"
             android:onClick="finishActivityB"/>
 
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn_start_dialog_label"
-            android:layout_toRightOf="@id/btn_finish_a"
+            android:layout_toRightOf="@id/btn_finish_b"
             android:onClick="startDialog"/>
     </RelativeLayout>
     <TextView

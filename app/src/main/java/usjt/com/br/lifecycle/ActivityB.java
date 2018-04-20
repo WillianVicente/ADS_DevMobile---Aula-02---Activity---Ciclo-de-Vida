@@ -84,7 +84,6 @@ public class ActivityB extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_destroy));
-        mStatusTracker.clear();
     }
 
     public void startDialog(View v) {
@@ -92,7 +91,7 @@ public class ActivityB extends Activity {
         startActivity(intent);
     }
 
-    public void startActivityB(View v) {
+    public void startActivityA(View v) {
         Intent intent = new Intent(ActivityB.this, ActivityA.class);
         startActivity(intent);
     }

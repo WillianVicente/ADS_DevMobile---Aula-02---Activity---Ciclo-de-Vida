@@ -38,6 +38,7 @@ public class ActivityC extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_c);
         mActivityName = getString(R.string.activity_c);
         mStatusView = (TextView)findViewById(R.id.status_view_c);
@@ -84,7 +85,6 @@ public class ActivityC extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_destroy));
-        mStatusTracker.clear();
     }
 
     public void startDialog(View v) {
@@ -97,8 +97,8 @@ public class ActivityC extends Activity {
         startActivity(intent);
     }
 
-    public void startActivityC(View v) {
-        Intent intent = new Intent(ActivityC.this, ActivityC.class);
+    public void startActivityA(View v) {
+        Intent intent = new Intent(ActivityC.this, ActivityA.class);
         startActivity(intent);
     }
 
